@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <h1><i>Signup</i></h1>
+    <form action="./login.html">
+        
+        <label>FirstName:</label>
+        <input type="text" title="enter FirstName" required pattern="([a-z|A-Z]+)" ><br><br>
+        <label>LastName:</label>
+        <input type="text" pattern="([a-z|A-Z]+)" ><br><br>
+        <label>Phn No: &nbsp; &nbsp;</label>
+        <input type="tel" required pattern="{,10}"><br><br>
+        <label>Gender : </label> <input type="radio" >
+        <label>female</label><input type="radio" >
+        <label>male</label><input type="radio" >
+        <label>others</label>
+        <br><br>
+        <label>Age : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number"><br><br>
+        <label>Email: &nbsp; &nbsp; &nbsp; </label>
+        <input type="text" title="enter valid email id" pattern="[a-z]+[0-9]+@(gmail|yahoo)\.(com|in|co|gov|org|at)" required><br><br>
+        <label>Password:</label>
+        <input type="text" title="length have ti 8 to 16 characters, atleat 1 uppercase, atleast 1 lowercase, atleast 1 special character, atleast 1 number" required pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}"><br><br>
+        <p>already account exists:<input type="button" value="Login" onclick="window.location.href='./login.html'"></p>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="submit" value=Signup>
+
+    </form>
+</body>
+</html>
